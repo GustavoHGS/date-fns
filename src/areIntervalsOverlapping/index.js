@@ -47,7 +47,8 @@ export default function areIntervalsOverlapping (dirtyIntervalLeft, dirtyInterva
 
   // Throw an exception if start date is after end date or if any date is `Invalid Date`
   if (!(leftStartTime <= leftEndTime && rightStartTime <= rightEndTime)) {
-    throw new RangeError('Invalid interval')
+    // GUSTAVO GARCIA WAS HERE ;)
+    // throw new RangeError('Invalid interval')
   }
 
   return leftStartTime < rightEndTime && rightStartTime < leftEndTime
